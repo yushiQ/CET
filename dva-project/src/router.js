@@ -1,12 +1,13 @@
 import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import  Login from './page/login';
-
+import Headmaster from "./page/headmaster"
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Switch>
         <Route path="/" exact component={Login} />
+        <Route path="/headmaster" exact component={Headmaster}/>
       </Switch>
     </Router>
   );

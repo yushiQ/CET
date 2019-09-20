@@ -1,0 +1,20 @@
+.dialogs{
+    width:50%;
+    height: 20%;
+    position: absolute;
+    left:50%;
+    top:2%;
+    transform: translateX(-50%);
+    background: #daa520;
+    font-size:.2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: aliceblue
+}
+.dialogs span{
+    display: block
+}
+.block{
+    display: none
+}

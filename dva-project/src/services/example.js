@@ -5,10 +5,13 @@ export function query() {
 }
 
 
-export function login (){
-  return request.post('http://{{148.70.121.59:9001}}/emstu/teacher/login')
+export function login (params){
+  return request('/api/emstu/teacher/login',params)
 }
 
+export function sign(params){
+  return request('/api/emstu/teacher/register',params)
+}
 
 
 
