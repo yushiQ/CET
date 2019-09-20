@@ -1,2 +1,2 @@
 # CET
-this is  examination management system
+this is project
