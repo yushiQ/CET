@@ -5,6 +5,7 @@ import styles from "./index.css";
 // import * as echarts from "echarts";
 //组件
 import Listchart from "../../components/lineChart";
+import  Histogram from "../../components/histogram"
 function Headermaster() {
 
  //初始数据
@@ -126,6 +127,7 @@ function Headermaster() {
       </div>
       {/* <div id="main" style={{ width: 600, height: 400 }}></div> */}
       <Listchart/>
+      <Histogram/>
     </div>
   );
 }
