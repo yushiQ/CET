@@ -154,7 +154,13 @@ function Login(props) {
               两周内自动登录
             </div>
           ) : (
-            <div className={styles.checkbox}></div>
+            <div> <input
+            className={styles.iphone}
+            type="text"
+            placeholder={datas.password}
+            onChange={setPassword}
+          />
+        </div>
           )}
           <button
             className={styles.but}

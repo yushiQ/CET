@@ -10,7 +10,8 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    color: aliceblue
+    color: aliceblue;
+    border-radius: 5px;
 }
 .dialogs span{
     display: block

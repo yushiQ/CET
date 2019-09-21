@@ -95,7 +95,7 @@ function Listchart() {
     myChart.setOption(option);
   }, []);
 
-  return <div id="main" style={{ width: 600, height: 400 }}></div>
+  return <div id="main" className={styles.cva}></div>
 }
 
 export default Listchart;

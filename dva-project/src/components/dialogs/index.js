@@ -5,6 +5,7 @@ function Dialogs(props) {
   useEffect(()=>{
     props.setTimer()
   },[])
+  
   return (
      <div className={styles.dialogs}><span>{props.title}</span></div>
   );

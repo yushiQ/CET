@@ -4,11 +4,11 @@ import styles from "./index.css";
 // import {login,sign} from "../../services/example"
 import  echarts from "echarts";
 
-function Listchart() {
+function Hishogram() {
   //初始数据
   useEffect(() => {
-    var myChart = echarts.init(document.getElementById("main"));
-    option = {
+    var myChart = echarts.init(document.getElementById("hish"));
+  let  option = {
         title : {
             text: '某地区蒸发量和降水量',
             subtext: '纯属虚构'
@@ -80,8 +80,8 @@ function Listchart() {
    myChart.setOption(option);
   }, []);
 
-  return <div id="main" style={{ width: 600, height: 400 }}></div>
+  return <div id="hish" className={styles.cva}></div>
 }
 
-export default Listchart;
+export default Hishogram;
 

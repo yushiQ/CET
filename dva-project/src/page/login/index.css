@@ -8,9 +8,7 @@ body,
 html {
   font-size: calc(100 / 750 * 100vw);
 }
-#root {
-  font-size: 14px;
-}
+
 /*小屏幕*/
 @media screen and (max-width:375px) {
   .header {
@@ -71,6 +69,15 @@ html {
     justify-content: center;
   }
   .Input input {
+    outline: none;
+    border: 1px solid #ccc;
+    width: 5.5rem;
+    height: 0.7rem;
+    padding-left: 0.1rem;
+    margin-top: 0.1rem;
+    padding-left: 0.3rem;
+  }
+  .iphone{
     outline: none;
     border: 1px solid #ccc;
     width: 5.5rem;
@@ -179,6 +186,15 @@ html {
     justify-content: center;
   }
   .Input input {
+    outline: none;
+    border: 1px solid #ccc;
+    width: 4rem;
+    height: 0.4rem;
+    padding-left: 0.1rem;
+    margin-top: 0.1rem;
+    padding-left: 0.3rem;
+  }
+  .iphone{
     outline: none;
     border: 1px solid #ccc;
     width: 4rem;
@@ -299,6 +315,12 @@ html {
     padding-left: 10px;
     margin-top: 10px;
   }
+  .iphone{
+    width: 270px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
   .but {
     width: 285px;
     height: 35px;
@@ -406,6 +428,12 @@ html {
     justify-content: center;
   }
   .Input input {
+    width: 270px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .iphone{
     width: 270px;
     height: 30px;
     padding-left: 10px;
