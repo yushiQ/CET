@@ -1,0 +1,761 @@
+html,body:globe{
+    width: 100%;
+    height: 100%;
+    list-style: none
+    
+}
+.allexam :globe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*小屏幕*/  
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-size: 13vw;
+    }
+    html{
+        font-size: 13vw
+    }
+    .head{
+        width: 100%;
+        height: 0.9rem;
+        background:orange;
+        text-align: center;
+        color: #fff;
+        line-height: 0.9rem;
+        font-size: 0.3rem;
+    }
+    .nav{
+        width: 100%;
+        margin-top: 0.3rem;
+    }
+    .top{
+        width: 7.02rem;
+        height: 0.46rem;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        font-size: 0.14rem;
+        line-height: 0.46rem;
+    }
+   
+    .ipt{
+        width: 1.5rem;
+        height: 0.30rem;
+        border: 1px solid #ccc;
+        margin-top: 0.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .put{
+        position: absolute;
+        margin-bottom: 0.5rem;
+        height: 0.2rem;
+        border: 1px solid #fff;
+        width: 1.1rem;
+        font-size: 0.005rem;
+    }
+    .spa{
+        position: absolute;
+        margin-top: -0.07rem;
+        margin-left: 1.3rem;
+    }
+    .bottom{
+        width: 7.02rem;
+        margin: 0 auto;
+        margin-top: 0.1rem;
+        border: 1px solid #ccc;   
+        list-style: none;
+    }
+   .uls{
+        list-style: none;   
+        margin:0;
+        display: flex;
+    }
+    .bottom ul li{
+        margin-left: 0.05rem; 
+        text-align: center;
+        font-size:.2rem;
+        border: 1px solid #ccc;
+    }
+    .bottom .hao{
+        width: 1rem;
+        height: 0.4rem;  
+        margin-left: -.8rem;
+    } 
+     .bottom .date{
+        width: 1.5rem;
+        height: 0.4rem;
+        font-size: 0.05rem;
+    } 
+    .bottom .li{
+        width: 1rem;
+        height: 0.4rem; 
+    }
+     .bottom .ji{
+        width: 1rem;
+        height: 0.4rem; 
+    } 
+     .xin{
+        width: 4rem;
+        height: 0.4rem;
+        font-size: 0.001rem;
+        line-height: 0.1rem;
+    } 
+     .exam{
+        width: 1.2rem;
+        height: 0.4rem;
+    } 
+   .done{
+        width:2.3rem;
+        height: 0.4rem;
+    }
+    .edit{
+        width: 3.23rem;
+        height: 2.88rem;
+        border: 1px solid #ccc;
+        line-height: 0.2rem;
+        color: rgba(16, 16, 16, 1);
+        font-size: 0.14rem;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 0.13rem;
+    }
+    .con{
+        width: 100%;
+        height: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        line-height: 0.5rem;
+    }
+    .con h4{
+        margin-top: -0.05rem;
+    }
+    .lun{
+        width: 3rem;
+        height: 0.3rem;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        font-size: 0.1rem;
+        
+    }
+    .lun input{
+        width: 2rem;
+
+    }
+    .neng{
+        width: 3rem;
+        height: 0.3rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.15rem;
+        font-size: 0.1rem;
+    }
+    .neng input{
+        width: 2rem;
+
+    }
+    .exam{
+        width:  1.5rem;
+        height: 0.26rem;
+        display: flex;
+        margin-left: 0.8rem;
+        margin-top: 0.1rem;
+        
+     }
+     .exam div{
+         width: 0.7rem;
+         height: 0.26rem;
+         border: 1px solid #1989FA;
+         margin-left: 0.1rem;
+         display: flex;
+         line-height: 0.26rem;
+         font-size: 0.1rem;
+     }
+    .del{
+        width:3.48rem;
+        height: 1.2rem;
+        border:1px solid #ccc;
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .other{
+        width: 1.49rem;
+        height: 0.26rem;
+        border: 1px solid #ccc;
+        margin-left: 5.9rem;
+        margin-top: -4.65rem;
+    }
+    select{
+        width: 1.49rem;
+        height: 0.26rem;
+       position: absolute;
+        margin-top: 0.058rem;
+    } 
+    .an{
+        width: 3.15rem;
+        height: 0.62rem;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.1rem;
+    }
+    .an div{
+        width: 1.98rem;
+        height: 0.62rem;
+        border: 1px solid #ccc;
+    }
+    .btns{
+        width: 100%;
+        height: 0.3rem;
+        margin-left: 2rem;
+        display: flex;
+        margin-top: 0.1rem;
+        font-size: 0.13rem;
+    }
+    .btns button{
+        width: 0.44rem;
+        height: 0.3rem;
+        border: 1px solid #ccc;
+        margin-left: 0.1rem;
+        background: #fff;
+        font-size: 0.01rem;
+    }
+    .btns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+    .dels{
+        width: 80%;
+        height: 0.5rem;
+        margin-left: 0.2rem;
+        display: flex;
+        margin-top: 0.1rem;
+        font-size: 0.12rem;
+    }
+    .spd{
+        width: 0.3rem;
+        height: 0.3rem;
+        background: orange;
+        border-radius: 50%;
+        /* line-height: 50px; */
+        text-align: center;
+        line-height: 0.3rem;
+    }
+    .dels p{
+        margin-left: 0.15rem;
+        font-size: 0.13rem;
+    }
+    .bns{
+       width: 80%;
+       height: 3.2rem;
+       display: flex;  
+       margin-top: 0.2rem;
+       margin-left: 1.3rem;
+       font-size: 0.12rem;
+    }
+    .bns button{
+        width: 0.8rem;
+        height: 0.32rem;
+        margin-left: 0.1rem;
+        font-size: 0.12rem;
+    }
+    .bns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+    
+}
+/*平板*/
+/* @media screen and (min-width: 768px) and (max-width: 992px){
+    
+} */
+/*中等屏幕*/
+ @media screen and (min-width: 700px) and (max-width: 1200px){
+    .head{
+        width: 100%;
+        height: 75px;
+        background: #1989FA;
+        text-align: center;
+        color: #fff;
+        line-height: 75px;
+        font-size: 20px;
+    }
+    .nav{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .top{
+        width: 973px;
+        height: 75px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+       align-self: center;
+       line-height: 75px;
+    }
+
+    .ipt{
+        width: 190px;
+        height: 30px;
+        border: 1px solid #ccc;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .put{
+        
+        margin-bottom: 20px;
+        position: absolute;
+        height: 24px;
+        border: 1px solid #fff;
+    }
+    .spa{
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 170px;
+    }
+ 
+    .bottom{
+        width: 973px;
+        height: 282.5px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        list-style: none;
+    }
+    .bottom ul li{
+        margin-left: 5px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .bottom ul{
+        width:935px;
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .bottom .hao{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .bottom .date{
+        width: 100px;
+        height: 40px;
+    }
+    .bottom .li{
+        width: 55px;
+        height: 40px;
+    }
+    .bottom .ji{
+        width: 100px;
+        height: 40px;
+    }
+    .xin{
+        width: 400px;
+        height: 40px;
+    }
+    .exam{
+        width: 90px;
+        height: 40px;  
+        text-align: center;
+    }
+    .done{
+        width: 90px;
+        height: 40px;
+    }
+    .edit{
+        width: 323px;
+        height: 288px;
+        border: 1px solid #ccc;
+        line-height: 20px;
+        color: rgba(16, 16, 16, 1);
+        font-size: 14px;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .con{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        line-height: 50px;
+    }
+    .con h4{
+        margin-top: -5px;
+    }
+    .lun{
+        width: 300px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        
+    }
+    .neng{
+        width: 300px;
+        height: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        
+    }
+    .exam{
+        width:  150px;
+        height: 26px;
+        display: flex;
+        margin-left: 107px;
+        margin-top: 10px;
+     }
+     .exam div{
+         width: 70px;
+         height: 26px;
+         border: 1px solid #1989FA;
+         margin-left: 10px;
+         display: flex;
+         line-height: 26px;
+     }
+    .del{
+        width:348px;
+        height: 120px;
+        border:1px solid #ccc;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .other{
+        width: 149px;
+        height: 26px;
+        border: 1px solid #ccc;
+        margin-left: 850px;
+        margin-top: -465px;
+    }
+    select{
+        width: 100%;
+        height: 100%;
+    } 
+    .an{
+        width: 315px;
+        height: 62px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .an div{
+        width: 198px;
+        height: 62px;
+        border: 1px solid #ccc;
+    }
+    .btns{
+        width: 100%;
+        height: 30px;
+        margin-left: 200px;
+        display: flex;
+        margin-top: 10px;
+    }
+    .btns button{
+        width: 44px;
+        height: 30px;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        background: #fff;
+    }
+    .btns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+    .dels{
+        width: 80%;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        margin-top: 10px;
+    }
+    .spd{
+        width: 30px;
+        height: 30px;
+        background: orange;
+        border-radius: 50%;
+        /* line-height: 50px; */
+        text-align: center;
+        line-height: 30px;
+    }
+    .dels p{
+        margin-left: 15px;
+    }
+    .bns{
+       width: 80%;
+       height: 32px;
+       display: flex;  
+       margin-top: 20px;
+       margin-left: 130px;
+    }
+    .bns button{
+        width: 80px;
+        height: 32px;
+        margin-left: 10px;
+    }
+    .bns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+} 
+/*大屏幕，或者宽屏*/
+ @media screen and (min-width: 1200px) {
+    .head{
+        width: 100%;
+        height: 75px;
+        background: #1989FA;
+        text-align: center;
+        color: #fff;
+        line-height: 75px;
+        font-size: 20px;
+    }
+    .nav{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .top{
+        width: 973px;
+        height: 75px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+       align-self: center;
+       line-height: 75px;
+    }
+
+    .ipt{
+        width: 190px;
+        height: 30px;
+        border: 1px solid #ccc;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .put{
+        
+        margin-bottom: 20px;
+        position: absolute;
+        height: 24px;
+        border: 1px solid #fff;
+    }
+    .spa{
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 170px;
+    }
+ 
+    .bottom{
+        width: 973px;
+        height: 282.5px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        list-style: none;
+    }
+    .bottom ul li{
+        margin-left: 5px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .bottom ul{
+        width:935px;
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .bottom .hao{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .bottom .date{
+        width: 100px;
+        height: 40px;
+    }
+    .bottom .li{
+        width: 55px;
+        height: 40px;
+    }
+    .bottom .ji{
+        width: 100px;
+        height: 40px;
+    }
+    .xin{
+        width: 400px;
+        height: 40px;
+    }
+    .exam{
+        width: 90px;
+        height: 40px;  
+        text-align: center;
+    }
+    .done{
+        width: 90px;
+        height: 40px;
+    }
+    .edit{
+        width: 323px;
+        height: 288px;
+        border: 1px solid #ccc;
+        line-height: 20px;
+        color: rgba(16, 16, 16, 1);
+        font-size: 14px;
+        text-align: center;
+        font-family: Roboto;
+        border: 1px solid rgba(187, 187, 187, 1);
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .con{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        line-height: 50px;
+    }
+    .con h4{
+        margin-top: -5px;
+    }
+    .lun{
+        width: 300px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        
+    }
+    .neng{
+        width: 300px;
+        height: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        
+    }
+    .exam{
+        width:  150px;
+        height: 26px;
+        display: flex;
+        margin-left: 107px;
+        margin-top: 10px;
+     }
+     .exam div{
+         width: 70px;
+         height: 26px;
+         border: 1px solid #1989FA;
+         margin-left: 10px;
+         display: flex;
+         line-height: 26px;
+     }
+    .del{
+        width:348px;
+        height: 120px;
+        border:1px solid #ccc;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .other{
+        width: 149px;
+        height: 26px;
+        border: 1px solid #ccc;
+        margin-left: 850px;
+        margin-top: -465px;
+    }
+    select{
+        width: 100%;
+        height: 100%;
+    } 
+    .an{
+        width: 315px;
+        height: 62px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .an div{
+        width: 198px;
+        height: 62px;
+        border: 1px solid #ccc;
+    }
+    .btns{
+        width: 100%;
+        height: 30px;
+        margin-left: 200px;
+        display: flex;
+        margin-top: 10px;
+    }
+    .btns button{
+        width: 44px;
+        height: 30px;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        background: #fff;
+    }
+    .btns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+    .dels{
+        width: 80%;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        margin-top: 10px;
+    }
+    .spd{
+        width: 30px;
+        height: 30px;
+        background: orange;
+        border-radius: 50%;
+        /* line-height: 50px; */
+        text-align: center;
+        line-height: 30px;
+    }
+    .dels p{
+        margin-left: 15px;
+    }
+    .bns{
+       width: 80%;
+       height: 32px;
+       display: flex;  
+       margin-top: 20px;
+       margin-left: 130px;
+    }
+    .bns button{
+        width: 80px;
+        height: 32px;
+        margin-left: 10px;
+    }
+    .bns button:nth-child(2){
+        background: #1989FA;
+        color: #fff;
+    }
+
+ } 
+
+
