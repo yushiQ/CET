@@ -198,6 +198,18 @@ html {
     background-color:rgba(63, 81, 181, 1);
     width: 20px;
     height: 20px;
+    transition:all 1s;
     border-radius: 50%;
+  }
+  .btnRight{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translateX(200%);
+    transition:all 1s;
   }
 }

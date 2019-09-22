@@ -1,0 +1,51 @@
+Arguments: 
+  D:\node\nodejs\node.exe D:\node\npm\node_modules\yarn\bin\yarn.js add echarts --save
+
+PATH: 
+  E:\服务器\;E:\Xshell\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\node\npm;C:\Program Files\MySQL\MySQL Server 5.0\bin;D:\MySQL\MySQL Server\bin;D:\MySQL Server\bin;E:\MySQL\MySQL Server\bin;D:\Git\cmd;D:\Git\usr\bin;D:\mongo\bin;F:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\node\nodejs\;F:\Program Files\TortoiseGit\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;D:\AppServ\Apache2.2\bin;D:\AppServ\php5;D:\AppServ\MySQL\bin;D:\Microsoft VS Code\bin;D:\mongo\bin;C:\Users\admin\AppData\Roaming\npm
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Yarn\Cache\v4\npm-pify-4.0.1-4b2cd25c50d598735c50292224fd8c6df41e3231\node_modules\pify\index.js' -> 'E:\box\dva\demo\node_modules\af-webpack\node_modules\pify\index.js'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "dva": "^2.4.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.5.0-beta.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

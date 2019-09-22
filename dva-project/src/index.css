@@ -1,5 +1,6 @@
 
 html, body, :global(#root) {
+<<<<<<< HEAD
    width:100%;
    height: 100%;
    padding:0;
@@ -9,5 +10,12 @@ html, body, :global(#root) {
 html,body{
    width:100%;
    height: 100%;
+=======
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding:0;
+  margin:0;
+>>>>>>> 7ca2ba7c4213e784d32f2e99b998e4a9c5cbfc37
 }
 

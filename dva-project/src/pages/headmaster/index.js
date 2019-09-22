@@ -10,14 +10,16 @@ import Listchart from "../../components/lineChart";
 import Histogram from "../../components/histogram";
 
 function Headermaster() {
-  let [button,setButton]=useState(true)
+ 
+  let [view,setView]=useState(Boolean,false)
   //初始数据
   useEffect(() => { }, []);
 
 let setDataStyle=()=>{
-  setButton(!button)
+  setView(!view)
 }
-console.log(button)
+
+
   return (
     <div className={styles.masterpage}>
       <header className={styles.header}>重点关注学生考试成绩统计表</header>
@@ -46,12 +48,11 @@ console.log(button)
           <div className={styles.item}>
             <span>张三,张三,张三</span>
             <span>(3/人)</span>
-            <span className={styles.Btns}><i className={styles.btnBox} onClick={setDataStyle}><b className={styles.icon}></b></i>柱状图/线圈</span>
+            <span className={styles.Btns}><i className={styles.btnBox} onClick={setDataStyle}><b className={view?styles.btnRight:styles.icon}></b></i>柱状图/线圈</span>
           </div>
         </div>
       </div>
-      <Listchart button={button}/>
-      <Histogram />
+    {view? <div><Listchart/> <Histogram /></div>:""} 
     </div>
   );
 }

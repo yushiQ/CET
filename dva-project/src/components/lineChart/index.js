@@ -1,13 +1,15 @@
-import React, { useEffect} from "react";
+import React, { useState,useEffect} from "react";
 // import { connect } from "dva";
 import styles from "./index.css";
 // import {login,sign} from "../../services/example"
 import  echarts from "echarts";
 
-function Listchart(props) {
-    let {button}=props;
+function Listchart() {
+    
   //初始数据
+
   useEffect(() => {
+    
     var myChart = echarts.init(document.getElementById("main"));
     var option = {
       title: {
@@ -27,7 +29,7 @@ function Listchart(props) {
             yAxisIndex: "none"
           },
           dataView: { readOnly: false },
-          magicType: { type: ["line", "bar"] },
+          magicType: { type:["line","bar"] },
           restore: {},
           saveAsImage: {}
         }
@@ -46,7 +48,7 @@ function Listchart(props) {
       series: [
         {
           name: "最高气温",
-          type: "line",
+          type:"line",
           data: [11, 11, 15, 13, 12, 13, 10],
           markPoint: {
             data: [
@@ -91,7 +93,6 @@ function Listchart(props) {
         }
       ]
     };
-
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
   }, []);
