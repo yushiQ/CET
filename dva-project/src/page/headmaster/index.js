@@ -34,7 +34,6 @@ function Headermaster() {
             <span>1703D</span>
             <span>1703D</span>
             <span>1703D</span>
-            <span>1703D</span>
           </div>
         </div>
         <div className={styles.name}>
