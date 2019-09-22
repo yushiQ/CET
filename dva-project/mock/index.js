@@ -1,0 +1,39 @@
+const data=[{
+    sort:1,
+    time:'11-03-2017',
+    theory:89,
+    skill:"Transfering",
+    serve:'啥封建时代咖啡机啥附近的时刻',
+    exam:'否',
+    edit:'编辑',
+    del:'删除'
+},{
+    sort:2,
+    time:'08-15-2017',
+    theory:67,
+    skill:"Success",
+    serve:'电视剧付款四大皆空',
+    exam:'是',
+    edit:'编辑',
+    del:'删除'
+},{
+    sort:3,
+    time:'12-22-2017',
+    theory:89,
+    skill:"Createing",
+    serve:'斯诺伐克打伞积分',
+    exam:'否',
+    edit:'编辑',
+    del:'删除'
+},{
+    sort:4,
+    time:'05-19-2017',
+    theory:78,
+    skill:"Success",
+    serve:'点击萨克付款四大皆空',
+    exam:'否',
+    edit:'编辑',
+    del:'删除'
+}]
+
+export default data;
