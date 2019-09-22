@@ -177,6 +177,27 @@ html {
     padding: 0 20px;
     color:#000;
     background: #fff;
-     padding: 0 15px; 
+    padding: 0 15px; 
   } 
+  .Btns{
+    float: right;
+  }
+  .name .btnBox{
+     position: relative;
+     display: inline-block;
+     border-radius: 20px;
+     margin-right: 10px;
+     width:60px;
+     height: 10px;
+     background-color: rgba(25, 137, 250, 1);;
+  }
+  .icon{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
 }

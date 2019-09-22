@@ -4,3 +4,28 @@
     margin-top:20px;
     padding:30px;
 }
+.histBox {
+    width: 100%;
+  
+  }
+  .details {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #ccc;
+  }
+  .details .times {
+    width: 120px;
+    padding: 10px;
+  }
+  .times span {
+    display: block;
+    line-height: 20px;
+  }
+  .presenting {
+    padding: 10px;
+    width: 1200px;
+    word-break: normal;
+    white-space: pre-warp;
+    word-wrap: break-word;
+  }
