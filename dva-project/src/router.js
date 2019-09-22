@@ -9,10 +9,10 @@ function RouterConfig({history}) {
   return (
     <Router history={history}>
       <Switch>
-        <Route path="/" exact component={LoginIndex} />
+        <Route path="/login" exact component={LoginIndex} />
         <Route path="/allexam" exact component={Allexam} />
         <Route path="/charts" exact component={Charts} />
-        <Route path="/" exact Redirect={Charts} />
+        <Route path="/" exact Redirect={LoginIndex} />
       </Switch>
     </Router>
   );
