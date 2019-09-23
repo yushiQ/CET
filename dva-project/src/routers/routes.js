@@ -1,24 +1,24 @@
-import LoginIndex from '../pages/home/login/index';
+
 import Allexam from '../pages/perspec/allexam/index';
-import Charts from '../pages/visualdisplay/charts/index';
+import  Login from './pages/login';
+import Headmaster from "./pages/headmaster"
+
 export default [
     {
         path:'/login',
-        component:LoginIndex
+        component:Login
     },{
         path:'/allexam',
         component:Allexam
     },
     {
-        path:'/charts',
-        component:Charts
+        path:'/headmaster',
+        component:Headmaster
     },
     {
         path:'/',
         redirect:'/login'
     }
-
-
 ]
 
 

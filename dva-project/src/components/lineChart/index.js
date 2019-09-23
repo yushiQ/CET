@@ -1,20 +1,35 @@
 import React, { useState,useEffect} from "react";
 // import { connect } from "dva";
 import styles from "./index.css";
-// import {login,sign} from "../../services/example"
+import {query} from "../../services/example"
 import  echarts from "echarts";
 
 function Listchart() {
     
+  let [uid,setUid]=useState(String)
   //初始数据
+ useEffect(() => {
+      // 获取当前用户信息
+    query({
+        method: "get",
+        mode: "cors",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        }
+      }).then(res=>{
+        setUid(res.data.useinfo.tid)
+      })
+     
 
-  useEffect(() => {
-    
     var myChart = echarts.init(document.getElementById("main"));
     var option = {
       title: {
         text: "XX学生的日周考成绩统计图",
-        subtext: "仅供参考"
+        subtext: "仅供参考",
+        styletest:{
+          fontSize:"12px"
+        }
       },
       tooltip: {
         trigger: "axis"
@@ -37,19 +52,19 @@ function Listchart() {
       xAxis: {
         type: "category",
         boundaryGap: false,
-        data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        data: ['08-01','08-02','08-03','08-04','08-05','08-06','08-07','08-09','08-10','08-11','08-12','08-13']
       },
       yAxis: {
         type: "value",
         axisLabel: {
-          formatter: "{value} °C"
+          formatter: "{value}"
         }
       },
       series: [
         {
-          name: "最高气温",
+          name: "理论",
           type:"line",
-          data: [11, 11, 15, 13, 12, 13, 10],
+          data: [35, 48, 70, 23, 30, 76.7, 36, 62, 38, 20, 12, 3.3],
           markPoint: {
             data: [
               { type: "max", name: "最大值" },
@@ -61,9 +76,9 @@ function Listchart() {
           }
         },
         {
-          name: "最低气温",
+          name: "技能",
           type: "line",
-          data: [1, -2, 2, 5, 3, 2, 0],
+          data:[15, 59, 90, 23, 30, 70, 82.2,48,20,60,22],
           markPoint: {
             data: [{ name: "周最低", value: -2, xAxis: 1, yAxis: -1.5 }]
           },

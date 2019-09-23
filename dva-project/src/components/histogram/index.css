@@ -1,3 +1,7 @@
+html{
+  font-size: calc(100/750*100vw)
+}
+
 .cva{
     background: #fff;
     height: 400px;
@@ -6,26 +10,96 @@
 }
 .histBox {
     width: 100%;
-  
   }
-  .details {
-    width: 100%;
-    display: flex;
+  .details{
     background: #fff;
     border-top: 1px solid #ccc;
   }
-  .details .times {
-    width: 120px;
-    padding: 10px;
+  @media screen and (min-width: 1200px){
+    .details {
+      width: 100%;
+      display: flex;
+     
+    }
+    .details .times {
+      width: 120px;
+      padding: 10px;
+    }
+    .times span {
+      display: block;
+      line-height: 20px;
+    }
+    .presenting {
+      padding: 10px;
+      width: 1200px;
+      word-break: normal;
+      white-space: pre-warp;
+      word-wrap: break-word;
+    }
   }
-  .times span {
-    display: block;
-    line-height: 20px;
+  @media screen and (max-width: 375px){
+    .details {
+      width: 100%;
+      display: flex;
+    }
+    .details .times {
+      width: 8rem;
+      padding: .10rem;
+    }
+    .times span {
+      display: block;
+      line-height: 20px;
+    }
+    .presenting {
+      padding: .1rem;
+      width: 4.7rem;
+      word-break: normal;
+      white-space: pre-warp;
+      word-wrap: break-word;
+    }
   }
-  .presenting {
-    padding: 10px;
-    width: 1200px;
-    word-break: normal;
-    white-space: pre-warp;
-    word-wrap: break-word;
+  @media screen and (min-width: 376px) and (max-width: 768px){
+    .details {
+      width: 100%;
+      display: flex;
+    }
+    .details .times {
+      padding: .10rem;
+    }
+    .times span {
+      display: block;
+      line-height: 20px;
+    }
+    .presenting {
+      padding: .1rem;
+      width: 4.9rem;
+      word-break: normal;
+      white-space: pre-warp;
+      word-wrap: break-word;
+    }
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    .details {
+      width: 100%;
+      display: flex;
+     
+    }
+    .details .times {
+      width: 120px;
+      padding: 10px;
+    }
+    .times span {
+      display: block;
+      line-height: 20px;
+    }
+    .presenting {
+      padding: 10px;
+      width: 580px;
+      word-break: normal;
+      white-space: pre-warp;
+      word-wrap: break-word;
+    }
+  }
+
+
+  

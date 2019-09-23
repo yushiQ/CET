@@ -9,6 +9,9 @@ import styles from "./index.css";
 import Listchart from "../../components/lineChart";
 import Histogram from "../../components/histogram";
 
+//数据
+let classData=["1703D","1703D","1703D","1703D","1703D","1703D","1703D","1703D","1703D","1703D","1703D"]
+
 function Headermaster() {
  
   let [view,setView]=useState(Boolean,false)
@@ -19,7 +22,6 @@ let setDataStyle=()=>{
   setView(!view)
 }
 
-
   return (
     <div className={styles.masterpage}>
       <header className={styles.header}>重点关注学生考试成绩统计表</header>
@@ -27,20 +29,11 @@ let setDataStyle=()=>{
         <div className={styles.classItem}>
           <div className={styles.hine}>选择班级</div>
           <div className={styles.item}>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
-            <span>1703D</span>
+          {
+            classData.map((item,index)=>{
+             return  <span key={index}>{item}</span>
+            })
+          }
           </div>
         </div>
         <div className={styles.name}>

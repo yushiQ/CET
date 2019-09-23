@@ -1,2 +1,0 @@
-# CET
-this is project

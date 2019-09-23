@@ -43,7 +43,7 @@ html {
     min-height: 2rem;
     line-height: .3rem;
     font-size: 14px;
-    padding:.2rem .2rem 0 .2rem;
+    padding:.2rem 0 0 .2rem;
   }
  .classItem{
     min-height:1rem;
@@ -67,33 +67,163 @@ html {
   }
    .item span {
     display: inline-block;
-    margin-left: .4rem;
+    margin-left: .3rem;
     background-color: #e6f1fc;
     border: 1px solid #a3d0fd;
     padding: .1rem .2rem;
     color: rgba(25, 137, 250, 1);
     border-radius: 2px;
-    margin-bottom: 12px;
+    margin-bottom: .12rem;
   }
   .name{
-    padding:.1rem;
+    padding:.1rem 0 .1rem .1rem;
   }
   .name span{
     border: 0;
-    padding: 0 .3rem;
+    padding: 0 .1rem 0 .3rem;
     color:#000;
     background: #fff;
   } 
+  .name span:nth-child(2){
+   padding:0;
+   margin:0;
+  }
+  .name  .Btns{
+    float: right;
+    margin:0;
+    padding:0;
+  }
+  .name .btnBox{
+     position: relative;
+     display: inline-block;
+     border-radius: 20px;
+     margin-right: .1rem;
+     width:.9rem;
+     height: .2rem;
+     background-color: rgba(25, 137, 250, 1);;
+  }
+  .icon{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: .4rem;
+    height: .4rem;
+    transition:all 1s;
+    border-radius: 50%;
+  }
+  .btnRight{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    transform: translateX(120%);
+    transition:all 1s;
+  }
 }
 /*大屏手机*/
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  .masterpage {
+    width: 100%;
+  }
+  .header {
+    height:1rem;
+    font-size: 16px;
+  }
+ 
+  .class {
+    min-height: 2rem;
+    line-height: .3rem;
+    font-size: 14px;
+    padding:.2rem 0 0 .2rem;
+  }
+ .classItem{
+    min-height:1rem;
+    padding:.3rem;
+  }
+  .class ::after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    _zoom:1;
+    clear: both;
+  }
+  .hine{
+     float: left;
+  }
+ .item{
+    width:85%;
+    float: left;
+  }
+   .item span {
+    display: inline-block;
+    margin-left: .3rem;
+    background-color: #e6f1fc;
+    border: 1px solid #a3d0fd;
+    padding: .1rem .2rem;
+    color: rgba(25, 137, 250, 1);
+    border-radius: 2px;
+    margin-bottom: .12rem;
+  }
+  .name{
+    padding:.1rem 0 .1rem .1rem;
+  }
+  .name span{
+    border: 0;
+    padding: 0 .1rem 0 .3rem;
+    color:#000;
+    background: #fff;
+  } 
+  .name span:nth-child(2){
+   padding:0;
+   margin:0;
+  }
+  .name  .Btns{
+    float: right;
+    margin:0;
+    padding:0;
+  }
+  .name .btnBox{
+     position: relative;
+     display: inline-block;
+     border-radius: 20px;
+     margin-right: .1rem;
+     width:.9rem;
+     height: .2rem;
+     background-color: rgba(25, 137, 250, 1);;
+  }
+  .icon{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: .4rem;
+    height: .4rem;
+    transition:all 1s;
+    border-radius: 50%;
+  }
+  .btnRight{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    transform: translateX(120%);
+    transition:all 1s;
+  }
 }
 
 /*平板*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .masterpage {
     width: 100%;
-   
   }
   .header {
     height: 80px;
@@ -108,11 +238,26 @@ html {
   .hine{
     display: inline-block;
   }
-   .classItem{
-    display: inline-block;
-   }
- 
-  .classItem span {
+  .classItem{
+    min-height:100px;
+  }
+  .class ::after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    _zoom:1;
+    clear: both;
+  }
+  .hine{
+     float: left;
+  }
+  .item{
+    width:95%;
+    float: left;
+  }
+  .item span {
     display: inline-block;
     margin-left: 40px;
     background-color: #e6f1fc;
@@ -121,6 +266,49 @@ html {
     color: rgba(25, 137, 250, 1);
     border-radius: 2px;
     margin-bottom: 12px;
+  }
+  .name{
+    padding:10px;
+  }
+  .name span{
+    border: 0;
+    padding: 0 20px;
+    color:#000;
+    background: #fff;
+    padding: 0 15px; 
+  } 
+  .Btns{
+    float: right;
+  }
+  .name .btnBox{
+     position: relative;
+     display: inline-block;
+     border-radius: 20px;
+     margin-right: 10px;
+     width:60px;
+     height: 10px;
+     background-color: rgba(25, 137, 250, 1);;
+  }
+  .icon{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: 20px;
+    height: 20px;
+    transition:all 1s;
+    border-radius: 50%;
+  }
+  .btnRight{
+    position: absolute;
+    left:0;
+    top:-5px;
+    background-color:rgba(63, 81, 181, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translateX(200%);
+    transition:all 1s;
   }
 }
 /*大屏幕，或者宽屏*/

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
-import  Login from './page/login';
-import Headmaster from "./page/headmaster"
+import  Login from './pages/login';
+import Headmaster from "./pages/headmaster"
 import Allexam from './pages/perspec/allexam/index';
 import Charts from './pages/visualdisplay/charts/index';
-import { Router, Route, Switch,Redirect } from 'dva/router';
+
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
